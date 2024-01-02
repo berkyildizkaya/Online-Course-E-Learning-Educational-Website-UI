@@ -6,7 +6,7 @@ const BrandCards = ({ logoUrl }) => {
             <Card align={"center"} size={"lg"}>
                 <CardBody>
                     <Box >
-                        <Image src={`../assets/images/${logoUrl}`} alt={"Brand Logo"} />
+                        <Image src={`../assets/images/brands/${logoUrl}`} alt={"Brand Logo"} />
                     </Box>
                 </CardBody>
             </Card>

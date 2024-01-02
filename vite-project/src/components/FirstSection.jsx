@@ -8,15 +8,15 @@ const FirstSection = () => {
                     <Image src={Lightning} boxSize={"40px"} mr={3} />
                 </Box>
                 <Box>
-                    <Heading as={"h2"} size={"lg"} color={"orange"}>Unlock</Heading>
+                    <Heading as={"h2"} size={{base:"md",md:"lg"}} color={"orange"}>Unlock</Heading>
                 </Box>
                 <Box ml={2}>
-                    <Heading as={"h2"} size={"lg"}>Your Creative Potential</Heading>
+                    <Heading as={"h2"} size={{base:"md",md:"lg"}}>Your Creative Potential</Heading>
                 </Box>
             </Flex>
-            <Flex justifyContent={"center"} mt={"5"}>
-                <Box>
-                    <Text fontSize='2xl' as={"b"}>with Online Design and Development Courses</Text>
+            <Flex justifyContent={"center"}   mt={"5"} >
+                <Box textAlign={"center"}>
+                    <Text fontSize={{base:"xl",md:"2xl"}} as={"b"} >with Online Design and Development Courses</Text>
                 </Box>
             </Flex>
             <Flex justifyContent={"center"} mt={2}>
