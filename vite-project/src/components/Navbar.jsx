@@ -18,7 +18,7 @@ const Navbar = () => {
   const [isMobile] = useMediaQuery("(max-width: 600px)");
   return (
     <>
-      <Flex w={"100%"} px={"0"} py={"5"} align={"center"} justify={"space-around"}>
+      <Flex w={"100%"} px={"0"} py={"5"} align={"center"} mb={"10"} justify={"space-around"}>
         <Box>
           <HStack as={"nav"}>
             <Avatar src={Logo} />

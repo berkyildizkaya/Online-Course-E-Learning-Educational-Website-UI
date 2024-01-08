@@ -2,7 +2,7 @@ import { AspectRatio, Box, Container, Flex } from "@chakra-ui/react";
 
 const VideoSection = () => {
     return (
-       <Container maxW={"container.xl"}>
+       <Container maxW={"container.xl"} mb={"10"}>
         <AspectRatio ratio={16 / 9}>
         <Box as="iframe" title="YouTube video" src="https://www.youtube.com/embed/LL68s9Dg1p8?si=C9ZucFQtG3edugqJ" allowFullScreen />
       </AspectRatio>

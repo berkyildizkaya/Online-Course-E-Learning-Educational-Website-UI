@@ -1,4 +1,4 @@
-import { Button, Container, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 import OurCoursesCard from "./OurCoursesCard";
 const OurCourses = () => {
     const CoursesData = [
@@ -53,29 +53,31 @@ const OurCourses = () => {
     ]
     return (
         <>
-            <Container maxW="container.xl" mt={"10"}>
-                <Heading as="h2">Our Courses</Heading>
-            </Container>
-            <Container maxW={"container.xl"}>
-                <Grid templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}>
-                    <GridItem colSpan={{ base: "auto", md: "2" }}>
-                        Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
-                    </GridItem>
-                    <GridItem colStart={{ base: "0", md: "4" }} colEnd={{ base: "0", md: "6" }} mt={{ base: "10", md: "0" }}>
-                        <Button>View All</Button>
-                    </GridItem>
-                </Grid>
-            </Container>
-
-            <Container maxW={"container.xl"} mt={"10"}>
-                <Grid templateColumns={['1fr', '1fr', 'repeat(2, 1fr)']} gap={"5"}>
-                    {CoursesData.map((Courses, index) => (
-                        <GridItem key={index}>
-                           <OurCoursesCard imageSrc={Courses.imageSrc} duration={Courses.duration} level={Courses.level} instructor={Courses.instructor} title={Courses.title} description={Courses.description}/>
+            <Box mb={10}>
+                <Container maxW="container.xl" mb={"10px"} >
+                    <Heading as="h2">Our Courses</Heading>
+                </Container>
+                <Container maxW={"container.xl"}>
+                    <Grid templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}>
+                        <GridItem colSpan={{ base: "auto", md: "2" }}>
+                            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
                         </GridItem>
-                    ))}
-                </Grid>
-            </Container>
+                        <GridItem colStart={{ base: "0", md: "4" }} colEnd={{ base: "0", md: "6" }} mt={{ base: "10", md: "0" }}>
+                            <Button>View All</Button>
+                        </GridItem>
+                    </Grid>
+                </Container>
+
+                <Container maxW={"container.xl"} mt={"10"}>
+                    <Grid templateColumns={['1fr', '1fr', 'repeat(2, 1fr)']} gap={"5"}>
+                        {CoursesData.map((Courses, index) => (
+                            <GridItem key={index}>
+                                <OurCoursesCard imageSrc={Courses.imageSrc} duration={Courses.duration} level={Courses.level} instructor={Courses.instructor} title={Courses.title} description={Courses.description} />
+                            </GridItem>
+                        ))}
+                    </Grid>
+                </Container>
+            </Box>
         </>
     )
 }

@@ -15,7 +15,7 @@ const Brands = () => {
   ];
 
   return (
-    <Flex px={"0"} py={"5"} justify={"center"} alignItems={"center"} mt={20} wrap={"wrap"} gap={2}>
+    <Flex px={"0"} py={"5"} justify={"center"} alignItems={"center"} mb={"10"} wrap={"wrap"} gap={2}>
       {brandLogos.map((brand) => (
         <BrandCards key={brand.id} logoUrl={brand.imageUrl} />
       ))}

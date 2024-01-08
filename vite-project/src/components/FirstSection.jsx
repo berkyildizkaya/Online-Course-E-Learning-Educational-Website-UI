@@ -3,7 +3,8 @@ import Lightning from "../assets/images/LightningLogo.png";
 const FirstSection = () => {
     return (
         <>
-            <Flex direction={"row"} p={2} mt={10} justifyContent={"center"} alignContent={"space-around"}>
+            <Box mb={20}>
+            <Flex direction={"row"} p={2}  justifyContent={"center"} alignContent={"space-around"}>
                 <Box>
                     <Image src={Lightning} boxSize={"40px"} mr={3} />
                 </Box>
@@ -32,6 +33,7 @@ const FirstSection = () => {
                     </ButtonGroup>
                 </Box>
             </Flex>
+            </Box>
         </>
     )
 }

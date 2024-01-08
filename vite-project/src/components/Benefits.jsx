@@ -1,4 +1,4 @@
-import { Button, Container, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 import BenefitCard from "./BenefitCard";
 
 const benefitData = [
@@ -38,29 +38,32 @@ const benefitData = [
 const Benefits = () => {
   return (
     <>
-      <Container maxW="container.xl" mt={"10"}>
-        <Heading as="h2">Benefits</Heading>
-      </Container>
-      <Container maxW={"container.xl"}>
-        <Grid templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}>
-          <GridItem colSpan={{base:"auto",md:"2"}}>
-            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
-          </GridItem>
-          <GridItem colStart={{base:"0",md:"4"}} colEnd={{base:"0",md:"6"}} mt={{base:"10",md:"0"}}>
-            <Button>View All</Button>
-          </GridItem>
-        </Grid>
-      </Container>
-
-      <Container maxW={"container.xl"} mt={"10"}>
-        <Grid templateColumns={['1fr', '1fr', '1fr', 'repeat(3, 1fr)']} gap={"6"} >
-          {benefitData.map((benefit, index) => (
-            <GridItem key={index}>
-              <BenefitCard number={benefit.number} title={benefit.title} description={benefit.description} />
+      <Box mb={"10"}>
+        <Container maxW="container.xl" mb={"10px"} >
+          <Heading as="h2">Benefits</Heading>
+        </Container>
+        <Container maxW={"container.xl"}>
+          <Grid templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}>
+            <GridItem colSpan={{ base: "auto", md: "2" }}>
+              Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
             </GridItem>
-          ))}
-        </Grid>
-      </Container>
+            <GridItem colStart={{ base: "0", md: "4" }} colEnd={{ base: "0", md: "6" }} mt={{ base: "10", md: "0" }}>
+              <Button>View All</Button>
+            </GridItem>
+          </Grid>
+        </Container>
+
+        <Container maxW={"container.xl"} mt={"10"}>
+          <Grid templateColumns={['1fr', '1fr', '1fr', 'repeat(3, 1fr)']} gap={"6"} >
+            {benefitData.map((benefit, index) => (
+              <GridItem key={index}>
+                <BenefitCard number={benefit.number} title={benefit.title} description={benefit.description} />
+              </GridItem>
+            ))}
+          </Grid>
+        </Container>
+      </Box>
+
     </>
   );
 };
