@@ -5,6 +5,9 @@ import FirstSection from "./components/FirstSection"
 import Header from "./components/Header"
 import VideoSection from "./components/VideoSection"
 import OurCourses from "./components/OurCourses"
+import Testimonials from "./components/Testimonials"
+
+
 function App() {
   return (
     <>
@@ -14,6 +17,7 @@ function App() {
       <VideoSection/>
       <Benefits/>
       <OurCourses/>
+      <Testimonials/>
     </>
   )
 }

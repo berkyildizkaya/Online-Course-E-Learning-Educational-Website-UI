@@ -75,15 +75,6 @@ const OurCourses = () => {
                         </GridItem>
                     ))}
                 </Grid>
-
-
-                {/* <Grid templateColumns={['1fr', '1fr', '1fr', 'repeat(3, 1fr)']} gap={"6"} >
-          {benefitData.map((benefit, index) => (
-            <GridItem key={index}>
-              <BenefitkCard number={benefit.number} title={benefit.title} description={benefit.description} />
-            </GridItem>
-          ))}
-        </Grid> */}
             </Container>
         </>
     )
