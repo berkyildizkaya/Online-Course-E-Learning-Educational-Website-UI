@@ -8,12 +8,12 @@ import OurCourses from "./components/OurCourses"
 import Testimonials from "./components/Testimonials"
 import Pricing from "./components/Pricing"
 import SwitchButton from "./components/SwitchButton"
+import Faq from "./components/Faq"
 
 
 function App() {
   return (
     <>
-    {/* <SwitchButton/> */}
       <Header/>
       <FirstSection/>
       <Brands/>
@@ -22,6 +22,7 @@ function App() {
       <OurCourses/>
       <Testimonials/>
       <Pricing/>
+      <Faq/>
     </>
   )
 }

@@ -9,37 +9,37 @@ const Pricing = () => {
             price: "0",
             features: [
                 {
-                    key:"1",
+                    key: "1",
                     icon: "Check",
                     text: "Access to selected free courses"
                 },
                 {
-                    key:"2",
+                    key: "2",
                     icon: "Check",
                     text: "Limited course materials and resources."
                 },
                 {
-                    key:"3",
+                    key: "3",
                     icon: "Check",
                     text: "Basic community support."
                 },
                 {
-                    key:"4",
+                    key: "4",
                     icon: "Check",
                     text: "No certification upon completion."
                 },
                 {
-                    key:"5",
+                    key: "5",
                     icon: "Check",
                     text: "Ad-supported platform."
                 },
                 {
-                    key:"6",
+                    key: "6",
                     icon: "Times",
                     text: "Access to exclusive Pro Plan community forums."
                 },
                 {
-                    key:"7",
+                    key: "7",
                     icon: "Times",
                     text: "Early access to new courses and updates. "
                 },
@@ -50,37 +50,37 @@ const Pricing = () => {
             price: "79",
             features: [
                 {
-                    key:"1",
+                    key: "1",
                     icon: "Check",
                     text: "Unlimited access to all courses."
                 },
                 {
-                    key:"2",
+                    key: "2",
                     icon: "Check",
                     text: "Unlimited course materials and resources."
                 },
                 {
-                    key:"3",
+                    key: "3",
                     icon: "Check",
                     text: "Priority support from instructors."
                 },
                 {
-                    key:"4",
+                    key: "4",
                     icon: "Check",
                     text: "Course completion certificates."
                 },
                 {
-                    key:"5",
+                    key: "5",
                     icon: "Check",
                     text: "Ad-free experience."
                 },
                 {
-                    key:"6",
+                    key: "6",
                     icon: "Check",
                     text: "Access to exclusive Pro Plan community forums."
                 },
                 {
-                    key:"7",
+                    key: "7",
                     icon: "Check",
                     text: "Early access to new courses and updates."
                 },
@@ -106,9 +106,11 @@ const Pricing = () => {
                     </Grid>
                 </Container>
                 <Container maxW={"container.xl"} >
-                    <Grid templateColumns={['1fr', '1fr', '1fr', 'repeat(2, 1fr)']}>
+                    <Grid templateColumns={['1fr', '1fr', '1fr', 'repeat(2, 1fr)']} gap={"20px"}>
                         {pricingData.map((Pricing, index) => (
-                            <GridItem><PricingCard cardData={Pricing} /></GridItem>
+                            <GridItem>
+                                <PricingCard cardData={Pricing} key={index} />
+                            </GridItem>
                         ))}
 
                     </Grid>
