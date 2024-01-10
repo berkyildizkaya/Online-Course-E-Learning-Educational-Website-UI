@@ -6,11 +6,14 @@ import Header from "./components/Header"
 import VideoSection from "./components/VideoSection"
 import OurCourses from "./components/OurCourses"
 import Testimonials from "./components/Testimonials"
+import Pricing from "./components/Pricing"
+import SwitchButton from "./components/SwitchButton"
 
 
 function App() {
   return (
     <>
+    {/* <SwitchButton/> */}
       <Header/>
       <FirstSection/>
       <Brands/>
@@ -18,6 +21,7 @@ function App() {
       <Benefits/>
       <OurCourses/>
       <Testimonials/>
+      <Pricing/>
     </>
   )
 }
