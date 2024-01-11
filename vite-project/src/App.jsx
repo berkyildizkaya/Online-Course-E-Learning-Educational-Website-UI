@@ -9,6 +9,7 @@ import Testimonials from "./components/Testimonials"
 import Pricing from "./components/Pricing"
 import SwitchButton from "./components/SwitchButton"
 import Faq from "./components/Faq"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Testimonials/>
       <Pricing/>
       <Faq/>
+      <Footer/>
     </>
   )
 }

@@ -12,7 +12,7 @@ import {
   useMediaQuery,
   IconButton
 } from "@chakra-ui/react";
-import Logo from "../assets/images/logo.jpg";
+// import Logo from "../assets/images/logo.jpg";
 import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
   const [isMobile] = useMediaQuery("(max-width: 600px)");
@@ -21,7 +21,7 @@ const Navbar = () => {
       <Flex w={"100%"} px={"0"} py={"5"} align={"center"} mb={"10"} justify={"space-around"}>
         <Box>
           <HStack as={"nav"}>
-            <Avatar src={Logo} />
+            <Avatar src={`../assets/images/logo.jpg`} />
             {!isMobile && (
               <>
                 <Link><Button variant={"nav"}>Home</Button></Link>

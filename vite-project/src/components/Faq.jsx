@@ -39,7 +39,7 @@ const Faq = () => {
 
     return (
         <>
-            <Container maxW={"container.xl"} >
+            <Container maxW={"container.xl"} mb={"20"} >
                 <Stack direction={{ base: "column", md: "row" }}>
                     <Box p={5}>
                         <Heading fontSize='xl'>Frequently Asked Questions</Heading>
