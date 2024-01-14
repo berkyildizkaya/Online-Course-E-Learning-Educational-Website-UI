@@ -1,0 +1,54 @@
+.switchCustom {
+    display: none;
+}
+
+.switchContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    border: 7px solid whitesmoke;
+    background: #fff;
+    font-weight: bold;
+    color: #343434;
+    cursor: pointer;
+    
+}
+
+.switchContainer::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    
+    background: #FF9500;
+    transition: all 0.3s;
+    border-radius: 6px;
+}
+
+.switchContainer div {
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.switchCustom:checked+.switchContainer::before {
+    left: 50%;
+}
+.switchCustom:checked + .switchContainer div:first-child{
+    color: black;
+    transition: color 0.3s;
+ }
+ .switchCustom:checked + .switchContainer div:last-child{
+    color: white;
+    transition: color 0.3s;
+ }
+ .switchCustom + .switchContainer div:first-child{
+    color: white;
+    transition: color 0.3s;
+ }
+ .switchCustom + .switchContainer div:last-child{
+    color: black;
+    transition: color 0.3s;
+ }
