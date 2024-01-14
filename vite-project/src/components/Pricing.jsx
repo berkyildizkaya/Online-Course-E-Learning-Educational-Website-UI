@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, GridItem, Heading } from "@chakra-ui/react";
+import { Box, Container, Grid, GridItem, Heading } from "@chakra-ui/react";
 import SwitchButton from "./SwitchButton";
 import PricingCard from "./PricingCard";
 

@@ -1,4 +1,4 @@
-import { AccordionButton, AccordionItem, AccordionPanel, Box, Button, Flex, IconButton, Spacer, Text,useTheme } from "@chakra-ui/react";
+import { AccordionButton, AccordionItem, AccordionPanel, Box, Flex, IconButton, Spacer, Text,useTheme } from "@chakra-ui/react";
 import { FaPlus, FaTimes, FaArrowRight } from "react-icons/fa";
 const FaqAccordionItem = ({ isExpanded, onToggle, title, description }) => {
     const theme = useTheme();

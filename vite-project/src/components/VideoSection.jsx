@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Container, Flex } from "@chakra-ui/react";
+import { AspectRatio, Box, Container } from "@chakra-ui/react";
 
 const VideoSection = () => {
     return (

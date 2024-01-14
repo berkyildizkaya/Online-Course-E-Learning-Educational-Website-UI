@@ -1,6 +1,5 @@
-import { Accordion, AccordionButton, AccordionItem, AccordionPanel, Box, Button, Container, Text, Heading, Stack, Flex } from "@chakra-ui/react";
+import { Accordion, Box, Button, Container, Text, Heading, Stack } from "@chakra-ui/react";
 import { useState } from "react";
-import { FaPlus, FaTimes } from "react-icons/fa";
 import FaqAccordionItem from "./FaqAccordionItem";
 
 const Faq = () => {

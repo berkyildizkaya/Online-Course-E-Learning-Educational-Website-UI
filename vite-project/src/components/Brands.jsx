@@ -1,6 +1,4 @@
-// Brands.js
-
-import { Box, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import BrandCards from "./BrandCards";
 
 const Brands = () => {

@@ -1,12 +1,12 @@
-import { Avatar, Box, Container, Flex, Grid, GridItem, Stack, Text, HStack, VStack, Heading, Spacer, IconButton } from "@chakra-ui/react";
+import { Avatar, Box, Container, Grid, Stack, Text, HStack, Heading, IconButton } from "@chakra-ui/react";
 import { FaInbox, FaPhoneAlt, FaLocationArrow, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
     return (
         <>
             <Container maxW={"container.2xl"} bg={"white"} p={"10"}>
                 <Grid templateColumns={["1fr", "1fr", "1fr", "repeat(2, 1fr)"]} justifyItems={"center"} alignItems={"center"} >
-                    
-                    <Stack direction={"column"}  gap={"3"} mb={{ base: "10", md: "0" }}>
+
+                    <Stack direction={"column"} gap={"3"} mb={{ base: "10", md: "0" }}>
                         <Avatar src={`../assets/images/logo.jpg`} />
                         <HStack>
                             <Box>
@@ -27,8 +27,8 @@ const Footer = () => {
                             <Text>Somewhere in the World</Text>
                         </HStack>
                     </Stack>
-                    
-                    <Stack  direction={"row"} wrap={["wrap", "nowrap"]} gridColumnGap={"10"} >
+
+                    <Stack direction={"row"} wrap={["wrap", "nowrap"]} gridColumnGap={"10"} >
                         <Box>
                             <Stack direction={"column"}>
                                 <Heading as='h4' size='md'>Home</Heading>

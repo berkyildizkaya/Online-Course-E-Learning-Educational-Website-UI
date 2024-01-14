@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardBody, CardFooter, CardHeader, Flex, Heading, List, ListIcon, ListItem, Text, VStack,useTheme } from "@chakra-ui/react";
+import { Box,  Card, CardBody, CardFooter, CardHeader,  Heading,  Text,useTheme } from "@chakra-ui/react";
 import PricingCardList from "./PricingCardList";
 
 

@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Card, CardBody, CardFooter, CardHeader, Flex, Heading, IconButton, Spacer, Text } from "@chakra-ui/react";
+import { Avatar, Box, Button, Card, CardBody, CardFooter, CardHeader,  Heading, Spacer, Text } from "@chakra-ui/react";
 import { GoArrowUpRight } from "react-icons/go";
 
 const TestimonialsCard = ({description,imageSrc,userName}) => {

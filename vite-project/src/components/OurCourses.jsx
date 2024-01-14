@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Grid, GridItem, Heading } from "@chakra-ui/react";
 import OurCoursesCard from "./OurCoursesCard";
 const OurCourses = () => {
     const CoursesData = [

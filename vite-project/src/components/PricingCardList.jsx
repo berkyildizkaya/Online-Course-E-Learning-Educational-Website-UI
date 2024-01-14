@@ -1,4 +1,4 @@
-import { HStack, VStack, Box, Text, IconButton,useTheme } from "@chakra-ui/react";
+import { HStack, VStack, Text, IconButton } from "@chakra-ui/react";
 import { FaCheck, FaTimes } from "react-icons/fa";
 
 const IconListItem = ({ icon, text }) => (

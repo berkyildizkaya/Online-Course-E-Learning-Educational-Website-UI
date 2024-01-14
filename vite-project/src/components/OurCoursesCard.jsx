@@ -1,7 +1,7 @@
 // OurCoursesCard.jsx
 import { Box, Button, Card, CardBody, Flex, Heading, Image, Spacer, Text } from "@chakra-ui/react";
 
-const OurCoursesCard = ({ imageSrc, duration, level, instructor, title, description, buttonText }) => {
+const OurCoursesCard = ({ imageSrc, duration, level, instructor, title, description }) => {
     return (
         <>
             <Card maxW={"xl"}>

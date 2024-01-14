@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Grid, GridItem, Heading } from "@chakra-ui/react";
 import BenefitCard from "./BenefitCard";
 
 const benefitData = [
@@ -32,7 +32,6 @@ const benefitData = [
     title: "Interactive Learning Environment",
     description: "Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding",
   },
-  // Diğer benefit verileri buraya eklenebilir
 ];
 
 const Benefits = () => {
