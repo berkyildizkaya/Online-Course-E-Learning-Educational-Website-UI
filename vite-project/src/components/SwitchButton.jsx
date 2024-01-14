@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../Switch.css'; // Stil dosyası
+import './switch.css'; // Stil dosyası
 
 const SwitchButton = () => {
   const [switchOn, setSwitchOn] = useState(false);
