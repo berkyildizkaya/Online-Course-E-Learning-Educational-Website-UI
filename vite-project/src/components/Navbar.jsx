@@ -10,12 +10,15 @@ import {
   HStack,
   Link,
   useMediaQuery,
-  IconButton
+  IconButton,
+  
 } from "@chakra-ui/react";
+import { useTheme } from "@emotion/react";
 // import Logo from "../assets/images/logo.jpg";
 import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
   const [isMobile] = useMediaQuery("(max-width: 600px)");
+  const theme = useTheme();
   return (
     <>
       <Flex w={"100%"} px={"0"} py={"5"} align={"center"} mb={"10"} justify={"space-around"}>
@@ -36,7 +39,7 @@ const Navbar = () => {
         <Box>
           <ButtonGroup>
             <Button>Sign Up</Button>
-            <Button bgColor="orange" color={"white"}>Login</Button>
+            <Button bgColor={theme.colors.orange[100]} color={"white"}  _hover={{bg:""}}>Login</Button>
             {
               isMobile && (
                 <>

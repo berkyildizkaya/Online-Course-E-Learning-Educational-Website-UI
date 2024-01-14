@@ -1,7 +1,7 @@
 
 import Benefits from "./components/Benefits"
 import Brands from "./components/Brands"
-import FirstSection from "./components/FirstSection"
+import HeroSection from "./components/HeroSection"
 import Header from "./components/Header"
 import VideoSection from "./components/VideoSection"
 import OurCourses from "./components/OurCourses"
@@ -15,16 +15,20 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <>
-      <Header/>
-      <FirstSection/>
-      <Brands/>
-      <VideoSection/>
-      <Benefits/>
-      <OurCourses/>
-      <Testimonials/>
-      <Pricing/>
-      <Faq/>
-      <Footer/>
+      <div style={{ backgroundColor: "#F7F7F8" }}>
+
+
+        <Header />
+        <HeroSection />
+        <Brands />
+        <VideoSection />
+        <Benefits />
+        <OurCourses />
+        <Testimonials />
+        <Pricing />
+        <Faq />
+        <Footer />
+      </div>
     </>
   )
 }

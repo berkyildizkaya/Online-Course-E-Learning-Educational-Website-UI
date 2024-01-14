@@ -39,18 +39,20 @@ const Faq = () => {
 
     return (
         <>
-            <Container maxW={"container.xl"} mb={"20"} >
+            <Container maxW={"container.xl"} mb={"20"} bg={"white"} p={"5"} >
                 <Stack direction={{ base: "column", md: "row" }}>
                     <Box p={5}>
-                        <Heading fontSize='xl'>Frequently Asked Questions</Heading>
+                        <Heading fontSize='4xl'>Frequently Asked Questions</Heading>
                         <Text mt={4}>Still have any questions? Contact our Team via support@skillbridge.com</Text>
                         <Button mt={"5"}>See All FAQ's</Button>
                     </Box>
                     <Box p={5} w={"100%"}>
-                        <Accordion allowToggle>
+                        <Accordion allowToggle >
 
                             {FaqData.map((Faq, index) => (
+                                <Box m={"2"} border={"1px"}  borderColor={"#F1F1F3"} borderRadius={"12px"}>
                                 <FaqAccordionItem isExpanded={isExpanded} onToggle={handleExpandedChange} title={Faq.title} description={Faq.description} key={index} />
+                                </Box>
                             ))}
                         </Accordion>
                     </Box>

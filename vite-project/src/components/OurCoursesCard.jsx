@@ -7,16 +7,16 @@ const OurCoursesCard = ({ imageSrc, duration, level, instructor, title, descript
             <Card maxW={"xl"}>
                 <CardBody>
                     <Image src={`../assets/images/courses/${imageSrc}`} />
-                    <Flex gap={"5"} mt={"5"} mb={"5"} wrap={"wrap"} >
-                        <Box>
-                            <Text fontSize={"md"}> {duration}</Text>
+                    <Flex gap={"5"} mt={"5"} mb={"5"} wrap={"wrap"} alignItems={"center"} >
+                        <Box borderRadius={"8px"} border={"1px"} borderColor={"gray.200"} p={"2"}>
+                            <Text fontSize={"sm"}> {duration}</Text>
                         </Box>
-                        <Box>
-                            <Text fontSize={"md"}> {level}</Text>
+                        <Box borderRadius={"8px"} border={"1px"} borderColor={"gray.200"} p={"2"}>
+                            <Text fontSize={"sm"} > {level}</Text>
                         </Box>
                         <Spacer />
                         <Box>
-                        <Text as={"b"} fontSize={"md"} align={"right"}> {instructor} </Text>
+                            <Text as={"b"} fontFamily={"BeVietnamProMedium"} fontSize={"md"} align={"right"}> {instructor} </Text>
                         </Box>
                     </Flex>
                     <Flex direction={"column"} wrap={"wrap"} mb={"5"} >

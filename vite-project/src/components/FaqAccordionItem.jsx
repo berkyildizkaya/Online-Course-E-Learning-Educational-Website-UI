@@ -1,9 +1,10 @@
-import { AccordionButton, AccordionItem, AccordionPanel, Box, Button, Flex, IconButton, Text } from "@chakra-ui/react";
+import { AccordionButton, AccordionItem, AccordionPanel, Box, Button, Flex, IconButton, Spacer, Text,useTheme } from "@chakra-ui/react";
 import { FaPlus, FaTimes, FaArrowRight } from "react-icons/fa";
 const FaqAccordionItem = ({ isExpanded, onToggle, title, description }) => {
+    const theme = useTheme();
     return (
         <>
-            <AccordionItem p={"5"}>
+            <AccordionItem p={"5"} border={"0"} >
                 {({ isExpanded }) => (
                     <>
                         <Flex>
@@ -11,7 +12,7 @@ const FaqAccordionItem = ({ isExpanded, onToggle, title, description }) => {
                                 {title}
                             </Box>
                             <Box>
-                                <IconButton size={"sm"} colorScheme="yellow" as={AccordionButton}  onClick={onToggle} >
+                                <IconButton size={"sm"} bg={theme.colors.orange["95"]} as={AccordionButton}  onClick={onToggle} >
                                     {isExpanded ? (
                                         <FaTimes fontSize='12px' />
                                     ) : (
@@ -26,9 +27,10 @@ const FaqAccordionItem = ({ isExpanded, onToggle, title, description }) => {
                                     {description}
                                 </Box>
                                 <Box>
-                                    <Flex bg={"gray.100"} p={"5"} alignItems={"center"} >
+                                    <Flex bg={"#F7F7F8"} p={"5"} alignItems={"center"} >
                                         <Text>Enrollment Process for different Courses</Text>
-                                        <IconButton as={"span"} flex={"1"} justifyContent={"flex-end"} icon={<FaArrowRight />} />
+                                        <Spacer></Spacer>
+                                        <IconButton  bg={"white"}  border={"0px"} borderRadius={"100px"} icon={<FaArrowRight />} />
 
                                     </Flex>
                                 </Box>

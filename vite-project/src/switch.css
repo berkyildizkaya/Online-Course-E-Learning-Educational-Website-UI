@@ -21,13 +21,14 @@
     width: 50%;
     height: 100%;
     left: 0;
+    
     background: #FF9500;
     transition: all 0.3s;
     border-radius: 6px;
 }
 
 .switchContainer div {
-    padding: 6px;
+    padding: 10px;
     text-align: center;
     z-index: 1;
 }

@@ -1,14 +1,15 @@
-import { HStack, VStack, Box, Text, IconButton } from "@chakra-ui/react";
+import { HStack, VStack, Box, Text, IconButton,useTheme } from "@chakra-ui/react";
 import { FaCheck, FaTimes } from "react-icons/fa";
 
 const IconListItem = ({ icon, text }) => (
   <HStack align="start" >
-    <IconButton size={"sm"} colorScheme={icon== "Check" ? "yellow" : "gray"} icon={icon == "Check" ? <FaCheck/> : <FaTimes/>} ></IconButton>
+    <IconButton size={"sm"} border={"1px"} borderColor={"#F1F1F3"} bg={icon== "Check" ? "#FFF4E5" : "whiteAlpha"} icon={icon == "Check" ? <FaCheck/> : <FaTimes/>}  ></IconButton>
     <Text>{text}</Text>
   </HStack>
 );
 
 const PricingCardList = ({ cardList }) => {
+  
   return (
     <VStack spacing={4} align="start">
 

@@ -1,6 +1,6 @@
 // Brands.js
 
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import BrandCards from "./BrandCards";
 
 const Brands = () => {
@@ -15,11 +15,16 @@ const Brands = () => {
   ];
 
   return (
-    <Flex px={"0"} py={"5"} justify={"center"} alignItems={"center"} mb={"10"} wrap={"wrap"} gap={2}>
-      {brandLogos.map((brand) => (
-        <BrandCards key={brand.id} logoUrl={brand.imageUrl} />
-      ))}
-    </Flex>
+
+    <>
+      <Flex px={"0"} my={"5"} justify={"center"} alignItems={"center"} mb={"10"} wrap={"wrap"} gap={2}>
+        {brandLogos.map((brand) => (
+          <BrandCards key={brand.id} logoUrl={brand.imageUrl} />
+        ))}
+      </Flex>
+      
+
+    </>
   );
 };
 

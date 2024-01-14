@@ -9,7 +9,7 @@ const TestimonialsCard = ({description,imageSrc,userName}) => {
           {description}
         </Text>
       </CardHeader>
-      <CardFooter gap={"15px"} alignItems={"center"}>
+      <CardFooter gap={"15px"} alignItems={"center"} bgColor={"#FCFCFD"}>
         <Box>
           <Avatar src={`../assets/images/testimonials/${imageSrc}`} />
         </Box>

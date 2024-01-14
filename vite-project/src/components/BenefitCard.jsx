@@ -1,12 +1,14 @@
-import { Card, CardBody, CardFooter, CardHeader, Flex, Heading, IconButton, Text } from "@chakra-ui/react";
+import { Card, CardBody, CardFooter, CardHeader, Flex, Heading, IconButton, Text,useTheme} from "@chakra-ui/react";
 import { GoArrowUpRight } from "react-icons/go";
 
 const BenefitCard = ({ number, title, description }) => {
+  const theme = useTheme();
+
   return (
     <Card maxW={"lg"}>
       <CardHeader>
         <Flex justify={"flex-end"}>
-          <Heading as={"h2"}>
+          <Heading as={"h2"} size='2xl'>
             {number}
           </Heading>
         </Flex>
@@ -18,7 +20,7 @@ const BenefitCard = ({ number, title, description }) => {
         </Flex>
       </CardBody>
       <CardFooter justify="flex-end">
-        <IconButton size={"lg"} color={"orange"} icon={<GoArrowUpRight />} />
+        <IconButton size={"lg"} color={theme.colors.orange[100]} icon={<GoArrowUpRight />} />
       </CardFooter>
     </Card>
   );

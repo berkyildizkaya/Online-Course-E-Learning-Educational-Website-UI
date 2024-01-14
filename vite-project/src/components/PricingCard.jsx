@@ -1,23 +1,25 @@
-import { Box, Button, Card, CardBody, CardFooter, CardHeader, Flex, Heading, List, ListIcon, ListItem, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Card, CardBody, CardFooter, CardHeader, Flex, Heading, List, ListIcon, ListItem, Text, VStack,useTheme } from "@chakra-ui/react";
 import PricingCardList from "./PricingCardList";
 
+
 const PricingCard = ({ cardData }) => {
+    const theme = useTheme();
     return (
         <>
             <Card h={"100%"}>
                 <CardHeader>
                     <Box
                         flexDirection="column"
-                        bg="gray.100"
+                        bg={theme.colors.orange[95]}
                         display="flex"
                         alignItems="center"
                         width="100%"
                         p="2"
                         borderRadius={"7"}
                     >
-                        <Text>{cardData.planName}</Text>
+                        <Text as="b">{cardData.planName}</Text>
                     </Box>
-                    <Box mt="5" display="flex" justifyContent="center" alignItems="center">
+                    <Box mt="5" display="flex" justifyContent="center" alignItems="baseline">
                         <Heading as="h2" size="xl">
                             ${cardData.price}
                         </Heading>
@@ -35,8 +37,8 @@ const PricingCard = ({ cardData }) => {
                     </Box>
 
                 </CardBody>
-                <CardFooter >
-                    <Button bg={"orange"} w={"100%"}>Get Started</Button>
+                <CardFooter  flex={"1"} justify={"center"} borderRadius={["0,0,8,8"]} roundedBottom={"lg"}  bg={theme.colors.orange[50]} w={"100%"} color={"white"} >
+                    Get Started
                 </CardFooter>
             </Card>
         </>

@@ -63,7 +63,7 @@ const OurCourses = () => {
                             Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
                         </GridItem>
                         <GridItem colStart={{ base: "0", md: "4" }} colEnd={{ base: "0", md: "6" }} mt={{ base: "10", md: "0" }}>
-                            <Button>View All</Button>
+                            <Button bg={"white"} color={"black"}>View All</Button>
                         </GridItem>
                     </Grid>
                 </Container>
