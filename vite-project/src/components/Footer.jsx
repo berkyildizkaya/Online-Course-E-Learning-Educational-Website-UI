@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <>
             <Container maxW={"container.2xl"} bg={"white"} p={"10"}>
-                <Grid templateColumns={["1fr", "1fr", "1fr", "repeat(2, 1fr)"]} justifyItems={"center"} alignItems={"center"} >
+                <Grid templateColumns={["1fr", "1fr", "1fr", "repeat(2, 1fr)"]} justifyItems={{base:"start",md:"center"}} alignItems={"center"} >
 
                     <Stack direction={"column"} gap={"3"} mb={{ base: "10", md: "0" }}>
                         <Avatar src={`../assets/images/logo.jpg`} />
@@ -49,7 +49,7 @@ const Footer = () => {
 
                         <Box>
                             <Heading as='h4' size='md'>Social Profiles</Heading>
-                            <Stack direction={"row"} >
+                            <Stack direction={"row"}  >
                                 <IconButton icon={<FaFacebook />} />
                                 <IconButton icon={<FaTwitter />} />
                                 <IconButton icon={<FaLinkedin />} />
